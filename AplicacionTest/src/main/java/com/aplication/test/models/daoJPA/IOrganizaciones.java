@@ -12,6 +12,6 @@ import com.aplication.test.models.entity.Organizaciones;
  *
  * 2 oct. 2019
  */
-public interface IOrganizacionesDAO extends CrudRepository<Organizaciones, Long> {
+public interface IOrganizaciones extends CrudRepository<Organizaciones, Long> {
 
 }

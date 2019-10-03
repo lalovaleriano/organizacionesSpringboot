@@ -16,11 +16,11 @@ import com.aplication.test.models.entity.Organizaciones;
 public interface IOrganizacionesService {
 	public List<Organizaciones> findAll();
 	
-//	public Organizaciones findById();
-//	
-//	public Organizaciones findAll();
-//	
-//	public Organizaciones findAll();
+	public Organizaciones findById(Long id);
+
+	public Organizaciones save(Organizaciones org);
+
+	public void delete(Long id);
 	
 
 }

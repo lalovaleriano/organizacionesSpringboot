@@ -23,6 +23,7 @@ import javax.persistence.Table;
 public class Organizaciones implements Serializable {
 
 	private static final long serialVersionUID = -2278274844502903157L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -36,8 +37,8 @@ public class Organizaciones implements Serializable {
 	@Column(nullable = true)
 	private String telefono;
 	
-	@Column(nullable = true,unique = true)
-	private Long idexterno;
+	@Column()
+	private String idexterno;
 
 	public Long getId() {
 		return id;
@@ -71,18 +72,18 @@ public class Organizaciones implements Serializable {
 		this.telefono = telefono;
 	}
 
-	public Long getIdexterno() {
+	public String getIdexterno() {
 		return idexterno;
 	}
 
-	public void setIdexterno(Long idexterno) {
+	public void setIdexterno(String idexterno) {
 		this.idexterno = idexterno;
 	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
-	
+
+		
 	
 }
